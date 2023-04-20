@@ -1,0 +1,71 @@
+/* Headings */
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+/* Body */
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root {
+    --dark-violet: hsl(256, 26%, 20%);
+    --grayish-blue: hsl(216, 30%, 68%);
+
+    --very-dark-violet: hsl(270, 9%, 17%);
+    --dark-grayish-violet: hsl(273, 4%, 51%);
+    --very-light-gray: hsl(0, 0%, 98%);
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Karla', sans-serif;
+}
+    button, input, textarea {
+        font-family: 'Karla', sans-serif;
+    }
+
+    section {
+        padding: 10vh 10%;
+    }
+
+    header {
+        font-family: 'Karla', sans-serif;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem 10%;
+        font-weight: 700;
+        font-size: 1rem;
+    }
+
+    main {
+        margin-block-end: 10%;
+    }
+
+    footer {
+        position: relative;
+        padding: 5vh 10%;
+        background: var(--very-light-gray) url(./assets/images/bg-pattern-footer-desktop.svg) no-repeat;
+        background-position: 0 0;
+        background-size: auto 50%;
+    }
+
+@media screen and (max-aspect-ratio: 1) {
+    section {
+        padding: 0;
+    }
+    
+    header {
+        background-color: var(--very-light-gray);
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        padding: 1rem 2rem;
+        width: calc(100% - 4rem);
+    }
+
+    footer {
+        background: var(--very-light-gray) url(./assets/images/bg-pattern-footer-mobile.svg) no-repeat;
+        background-size: 100%;
+        padding: 5vh 2rem;
+    }
+
+}
